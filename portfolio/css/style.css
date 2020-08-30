@@ -1,0 +1,529 @@
+/*making colour palatte*/
+@import 'utilities.css';
+:root{
+    /*--primary:#3DCFD3;*/
+    --primary:#ffd700;
+    --dark:#161616;
+    --pure:#ffffff;
+    --ternary:#898989;
+    --light:#f2f2f2;
+    --secondary:#070606;
+}
+
+*
+{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased
+}
+body{
+    font-family:'poppins',sans-serif;
+}
+header{
+    background: var(--dark);
+    clip-path: polygon(0 0,100% 0,100% 100%,70% 87% , 0 100%);
+    
+}
+.container{
+    max-width:1152px;
+    
+    margin:0 auto;
+}
+
+header nav .left a{
+    color:var(--pure);
+    text-decoration: none;
+    margin-right:2rem;
+    text-transform: uppercase;
+    transition: all .3s ease
+}
+header nav .left a:hover{
+    color: var(--primary)
+}
+
+header nav{
+    padding:2rem 0;
+    margin-bottom: 6rem; /*when u use svgs*/
+}
+header nav .branding{
+    margin-right:3rem;
+}
+
+.hero .left img{
+    width: 400px;
+    margin-bottom:12rem;
+    
+}
+
+.hero .right{
+    color:var(--pure);
+    margin-top:-7rem;
+    
+}
+
+.hero .right h5{
+    font-size: 1.6rem;
+    color:var(--primary);
+    margin-bottom: 0.5rem;
+    letter-spacing: 3.5px;
+    text-transform: uppercase;
+}
+
+
+.hero .right h1{
+    font-size:3.26rem;
+    font-weight: 10;
+    line-height:1.2;
+    margin-top:25px;
+    
+    
+}
+.hero .right h1 span{
+    color: var(--primary);
+}
+.hero .right p{
+    line-height:1.9;
+    margin-bottom: 2rem;
+
+}
+section{
+    padding:9rem 0;
+    
+}
+section.about .about-me-img{
+    height:455px;
+    width:455px;
+    border-radius:5%;
+}
+
+section.about h1{
+    margin-bottom: 1rem;
+    font-size:3.6rem;
+    font-weight:900;
+
+}
+section.about h1 span{
+    color:var(--primary)
+}
+section.about h3{
+    font-size:1rem;
+    margin-bottom: 1rem;
+    font-weight: 900;
+    
+}
+section.about p{
+    color:var(--ternary);
+    line-height: 1.8;
+    text-indent: 4rem;
+}
+
+section.about .social{
+    display: flex;
+    
+}
+section.about .social a{
+    background: var(--dark);
+    
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+    transition: all .3s ease;
+    margin-top:1rem;
+}
+section.about .social a:hover{
+    background: var(--primary);
+    color:var(--dark)
+}
+section.about .social a i{
+    width:100%;
+    height:100%;
+    font-size:22px;
+    
+    padding:0.56rem;
+    color:var(--pure);
+}
+
+
+.services
+{
+    margin-top: 7rem;
+    padding-bottom:13rem;
+    /*clip-path: polygon(0 0,90% 0,92% 3%,94% 0,100% 0,100% 100%,0 100%);*/
+}
+.section-heading{
+    color:var(--secondary);
+    text-align:center;
+    margin-bottom:1rem;
+    font-size: 3rem;
+    font-weight: 900;
+
+}
+.section-heading span{
+    color: var(--primary);
+}
+.section-heading+ p{
+    color:var(--ternary);
+    margin-bottom:8rem;
+    text-align: center;
+
+}
+
+section.services .container .card-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap:6rem
+    
+}
+
+section.services .container .card-wrapper .card{
+    background-color: var(--pure);
+    padding: 3rem 2rem;
+    position:relative;
+    padding-top:4rem;
+    text-align: center;
+    transition: all .3s ease;
+}
+section.services
+{
+    background-color: var(--light);
+}
+
+
+section.services .container .card-wrapper .card .icon-box{
+    width:90px;
+    height:90px;
+    background-color:var(--dark);
+    border-radius: 50%;
+    position:absolute; /*note i we want to make anything absolute..,make its parent position relative(i.e parent means= on which this absolute element should come))*/
+    top:-3.5rem;
+    left:50%;
+    transform: translate(-50%);
+    
+}
+
+section.services .container .card-wrapper .card .icon-box i{
+    color:var(--primary);
+    font-size:40px;
+    max-width:90px;
+    margin: 1.5rem auto;
+    
+}
+
+
+section.services .container .card-wrapper .card h2{
+    font-weight:400;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+
+section.services .container .card-wrapper .card p{
+    color:var(--ternary);
+    line-height: 1.6rem;
+}
+
+
+section.services .container .card-wrapper .card:hover{
+    background-color: var(--dark);
+    color:var(--pure);
+    font-weight:900;
+}
+section.freelancer{
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/camera.png);
+    color:var(--pure);
+    clip-path: polygon(0 0,100% 0,100% 100%,74% 70% , 0 100%);
+    padding-bottom: 14rem;
+}
+
+section.freelancer h1{
+    font-size:2rem;
+    margin-bottom: 0.7rem;
+}
+
+section.freelancer p{
+    margin-bottom: 2rem;
+}
+
+section.reviews .slider .slide img{
+    width:180px;
+    height:180px;
+   
+    object-fit:cover;
+    margin-bottom: 2rem;
+    background: transparent;
+}
+section.reviews .slider .slide{
+    text-align:center;
+    display:flex ;
+    align-items: center;
+    flex-direction: column;
+    padding:0 10rem;
+}
+
+section.reviews .slider .slide p{
+    color:var(--ternary);
+    margin-bottom:1 rem;
+}
+
+section.reviews .slider .slide span{
+    margin-top:2rem;
+    font-size:1.1rem;
+    font-weight:900;
+}
+
+section.reviews .slider .slide span i{
+    color: var(--primary);
+    font-size: 16px;
+    border-color: black
+}
+
+section.reviews .slider-dots .dots{
+    list-style-type: none;
+    display: flex!important; /*here we are forcefully overriding this style on the original style in cdn which is very difficult..hence we need to force override using !important*/
+    justify-content: center;
+}
+section.reviews .slider-dots{
+    margin-top:1rem;
+}
+
+section.reviews .slider-dots button{
+    font-size:0;
+    width:8px;
+    height:5px;
+    margin-right:0.3rem;
+    border:none;
+    outline:none;
+    background:var(--ternary);
+    border-radius:50px;
+    cursor: pointer;
+}
+section.reviews .dots li.slick-active button{
+    background:var(--primary);
+    width:20px;
+}
+
+section.blog{
+    background: var(--dark);
+    clip-path: polygon(0 0,100% 0,100% 100%,80% 90%,0 100%);
+    padding-bottom: 10rem;
+}
+section.blog .card-wrapper{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:3rem;
+}
+
+section.blog .container .card-wrapper .card .img-wrapper img{
+    width:34.125rem;
+    height:18.75rem;
+    align-items: center;
+}
+
+section.blog .container .card-wrapper .card .card-content h3{
+    text-align: center;
+    margin-top: 1rem;
+    color:var(--pure);
+    font-weight:200;
+}
+
+section.contact .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.only-mobile .branding-mob{
+    
+    display: none;
+}
+section.contact .card-wrapper .card{
+    text-align: center;
+}
+section.contact .card-wrapper .card i{
+    font-size: 6rem;
+    margin-bottom:2rem;
+}
+section.contact .card-wrapper .card h1{
+    font-weight: 600;
+    margin-bottom: 0.7rem;
+
+}
+section.contact .card-wrapper .card h6{
+    font-size:1rem;
+    color:var(--ternary);
+    font-weight:500
+}
+
+section.contact .input-wrap{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:2rem;
+    margin-bottom:2rem;
+    margin-top:3rem;
+    
+}
+section.contact .input-wrap-2{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+section.contact input{
+    padding:1rem;
+    border:1px solid var(--ternary);
+    font-size:1rem;
+    
+}
+section.contact .input-wrap-2 input{
+    margin-bottom:2rem;
+    font-size: 1rem;
+    padding:1rem
+}
+section.contact .input-wrap-2 textarea{
+    padding:0.5rem;
+    border:1px solid var(--ternary);
+    font-size:1.4rem;
+}
+section.contact form{
+    padding: 3rem;
+} 
+section.contact .input-wrap-2 textarea:focus{
+    outline:none;
+}
+section.contact input:focus{
+    outline: none;
+}
+
+section.contact .btn-wrapper{
+    text-align:center;
+    margin-top:2rem;
+}
+
+
+footer{
+    background:var(--dark);
+    padding: 2rem;
+    margin-top:-2rem;
+
+}
+footer .footer-socials
+{
+    display:flex;
+    max-width:100%;
+
+}
+footer .footer-socials a{
+   
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+    transition: all .3s ease;
+    margin-top:1rem;
+    
+}
+footer .footer-socials .icn{
+    margin:auto;
+    margin-top:2rem;
+}
+footer .footer-socials .icn i{
+    font-size:1.52rem;
+    margin:auto;
+    text-align:center;
+    color:var(--pure)
+
+}
+footer .footer-socials .icn i:hover{
+   
+    color:var(--primary)
+
+}
+
+
+@media(max-width:1100px){
+    header #main-nav{
+    
+    }
+    
+}
+@media(max-width:800px){
+    body{
+        text-align: center;
+    }
+    #main-nav{
+        width:500px;
+    }
+    section.about p {
+        
+        text-indent:0;
+    }
+    section.blog .card-wrapper{
+        grid-template-columns: repeat(1,1fr);
+    }
+    section.services .container .card-wrapper
+    {
+        grid-template-columns: repeat(1,1fr);   
+        padding:1rem;
+    }
+    header
+    {
+        display: none;
+    }
+    .container{
+        width: 400px;
+        display: block;
+    }
+    section.blog {
+        clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+    }
+    section.blog .container .card-wrapper .card .img-wrapper img {
+        width: 100%;
+        height: 18.75rem;
+        align-items: center;
+    }
+    section.contact .input-wrap {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 2rem;
+        margin-bottom: 2rem;
+        margin-top: 3rem;
+    }
+    section.freelancer {
+        
+        clip-path: polygon(0 0,100% 0,100% 100%,70% 90% , 0 100%);
+      
+    }
+    section.about .about-me-img {
+        height: 255px;
+        width: 255px;
+        margin: 0 4rem;
+        border-radius: 5%;
+    }
+    section.about h1 {
+        
+        
+        text-align: center;
+    }
+    section.contact .card-wrapper{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    section
+    {
+        padding:5rem 0;
+    }
+    .fone{
+        margin-left: 4rem;
+    }
+    .only-mobile .branding-mob{
+        background:var(--dark);
+        display: block;
+        padding:2rem;
+    }
+}
